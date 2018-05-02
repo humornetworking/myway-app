@@ -31,7 +31,9 @@ export class AppComponent {
          },
        "pricing_type": "fixed_price",
        "requested_info": ["email"]
-     })
+     },{
+        headers: headers
+      })
       .subscribe(
         res => {
           console.log(res);
