@@ -21,7 +21,7 @@ export class AppComponent {
    let headers = new HttpHeaders();
    headers = headers.append("X-CC-Api-Key", "8b0fd3cf-0849-468c-8d64-3b16f4e48e1e");
    headers = headers.append("Content-Type", "application/json");
-   headers = headers.append("X-CC-Version: 2018-03-22");
+   headers = headers.append("X-CC-Version", "2018-03-22");
    this.http.post('https://api.commerce.coinbase.com/checkouts', {
          "name": "La Vida es Bella",
          "description": "Una vez que el pan salio del horno de barro, la mantequilla empezo a derretirse",
